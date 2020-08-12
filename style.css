@@ -106,3 +106,38 @@ form button:hover {
   transform: translateY(8rem) rotateZ(20deg);
   opacity: 0;
 }
+
+.select {
+  margin: 1rem;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.filter-todo {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+  color: #116459;
+  background-color: whitesmoke;
+  width: 8rem;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.select::after {
+  content: '\25bc';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: #2fc944;
+  padding: 0.6rem 1rem;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+.select:hover::after {
+  color: #116459;
+}
