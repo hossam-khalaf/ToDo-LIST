@@ -5,3 +5,90 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  background: linear-gradient(90deg, #116459, #6b9791);
+  color: whitesmoke;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+}
+
+header {
+  font-size: 1.5rem;
+}
+
+header,
+form {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border: none;
+  background: whitesmoke;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+form button {
+  color: #116459;
+  cursor: pointer;
+  /* transition: all 0.3s ease; */
+}
+
+form button:hover {
+  background-color: #116459;
+  color: whitesmoke;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  max-width: 500px;
+  min-width: 30%;
+  list-style: none;
+}
+
+.todo {
+  margin: 0.5rem;
+
+  color: #116459;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-item {
+  background-color: whitesmoke;
+  flex: 1;
+  margin-right: 0.5rem;
+  padding: 0.4rem;
+}
+
+.completed-btn,
+.delete-btn {
+  background-color: #2fc944;
+  color: whitesmoke;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  /* margin-right: 0.5rem; */
+}
+.delete-btn {
+  background-color: tomato;
+  margin-left: 0.5rem;
+}
