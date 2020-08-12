@@ -64,7 +64,7 @@ form button:hover {
 
 .todo {
   margin: 0.5rem;
-
+  transition: all 0.3s ease;
   color: #116459;
   display: flex;
   justify-content: space-between;
@@ -78,6 +78,10 @@ form button:hover {
   padding: 0.4rem;
 }
 
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
 .completed-btn,
 .delete-btn {
   background-color: #2fc944;
@@ -91,4 +95,14 @@ form button:hover {
 .delete-btn {
   background-color: tomato;
   margin-left: 0.5rem;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.8;
+  color: black;
+}
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
 }
